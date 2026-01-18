@@ -1,0 +1,24 @@
+{
+  "name": "embed-factory",
+  "version": "1.0.0",
+  "description": "Svelte embed component generator and GitHub push",
+  "main": "embedify.js",
+  "scripts": {
+    "generate": "node embedify.js",
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "author": "R K",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@octokit/rest": "^20.0.2",
+    "fs-extra": "^11.1.1",
+    "prettier": "^3.0.0",
+    "svelte": "^4.3.0"
+  },
+  "devDependencies": {
+    "rollup": "^3.29.0",
+    "rollup-plugin-svelte": "^7.2.0"
+  }
+}
