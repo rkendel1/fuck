@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "vercel-build": "npm install --legacy-peer-deps && rollup -c",
     "build": "rollup -c",
-    "start": "sirv public --single --port 5000"
+    "start": "sirv public --single --port 5000",
+    "vercel-build": "npm install && npm run build"
   },
   "dependencies": {
     "svelte": "^4.2.6",
