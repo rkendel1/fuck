@@ -15,7 +15,7 @@
     "@babel/parser": "^7.22.9"
   },
   "devDependencies": {
-    "rollup": "^3.34.0",
+    "rollup": "3.33.1",
     "rollup-plugin-svelte": "^7.2.3",
     "sirv-cli": "^2.1.4"
   },
