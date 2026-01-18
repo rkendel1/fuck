@@ -2,24 +2,21 @@
   "name": "embed-factory",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "rollup -c",
-    "start": "sirv public --single --port 5000",
-    "vercel-build": "npm install --legacy-peer-deps && npm run build"
-  },
-  "dependencies": {
-    "svelte": "^4.2.6",
-    "fs-extra": "^11.1.1",
-    "prettier": "^3.0.0",
-    "@babel/parser": "^7.22.9"
-  },
-  "devDependencies": {
-    "rollup": "latest",
-    "rollup-plugin-svelte": "^7.2.3",
-    "sirv-cli": "^2.1.4"
-  },
   "engines": {
     "node": ">=18"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "echo 'Nothing to start; builds web components to public/'"
+  },
+  "dependencies": {
+    "svelte": "^4.2.1",
+    "fs-extra": "^11.1.1",
+    "prettier": "^3.3.0",
+    "@babel/parser": "^7.22.11"
+  },
+  "devDependencies": {
+    "rollup": "^3.31.0",
+    "rollup-plugin-svelte": "^7.2.3"
   }
 }
