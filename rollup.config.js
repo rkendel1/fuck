@@ -1,4 +1,7 @@
 import svelte from 'rollup-plugin-svelte';
+
+// Import all your embeds here
+import Tab from './src/embed-components/Tab.svelte';
 import Announcement from './src/embed-components/Announcement.svelte';
 import ThemeSelector from './src/embed-components/ThemeSelector.svelte';
 import Step from './src/embed-components/Step.svelte';
@@ -6,7 +9,6 @@ import ChartToolbar from './src/embed-components/ChartToolbar.svelte';
 import Github from './src/embed-components/Github.svelte';
 import LinkedCard from './src/embed-components/LinkedCard.svelte';
 import Steps from './src/embed-components/Steps.svelte';
-import Tab from './src/embed-components/Tab.svelte';
 
 export default {
   input: {
@@ -21,7 +23,14 @@ export default {
   },
   output: {
     dir: 'public',
-    format: 'esm'
+    format: 'esm',
+    sourcemap: true
   },
-  plugins: [svelte()]
+  plugins: [
+    svelte({
+      compilerOptions: {
+        customElement: true // Each component becomes a web component
+      }
+    })
+  ]
 };
