@@ -63,7 +63,14 @@ export const embedConfigRegistry = {
     fields: {
 ...COMMON_FIELDS,
     ...BRAND_COLOR_FIELDS
+    ,
+  steps: {
+    fields: {
+...COMMON_FIELDS,
+    ...BRAND_COLOR_FIELDS
     }
+  }
+}
   }
 }
   }

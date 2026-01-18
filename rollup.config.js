@@ -5,6 +5,7 @@ import Step from './src/embed-components/Step.svelte';
 import ChartToolbar from './src/embed-components/ChartToolbar.svelte';
 import Github from './src/embed-components/Github.svelte';
 import LinkedCard from './src/embed-components/LinkedCard.svelte';
+import Steps from './src/embed-components/Steps.svelte';
 
 export default {
   input: {
@@ -21,6 +22,8 @@ export default {
     Github: 'src/embed-components/Github.svelte'
   ,
     LinkedCard: 'src/embed-components/LinkedCard.svelte'
+  ,
+    Steps: 'src/embed-components/Steps.svelte'
   },
   output: {
     dir: 'public',

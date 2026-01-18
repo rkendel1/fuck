@@ -5,6 +5,7 @@ import Step from '../embed-components/Step.svelte';
 import ChartToolbar from '../embed-components/ChartToolbar.svelte';
 import Github from '../embed-components/Github.svelte';
 import LinkedCard from '../embed-components/LinkedCard.svelte';
+import Steps from '../embed-components/Steps.svelte';
 export const EMBED_REGISTRY = {};
 
 export const embedRegistry = {
@@ -21,4 +22,6 @@ export const embedRegistry = {
   'github': Github
 ,
   'linked-card': LinkedCard
+,
+  steps: Steps
 };

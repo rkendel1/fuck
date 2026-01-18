@@ -5,6 +5,7 @@ import Step from '../src/embed-components/Step.svelte';
 import ChartToolbar from '../src/embed-components/ChartToolbar.svelte';
 import Github from '../src/embed-components/Github.svelte';
 import LinkedCard from '../src/embed-components/LinkedCard.svelte';
+import Steps from '../src/embed-components/Steps.svelte';
 export const EmbedModule = {
   async render({ componentType, props, container }) {
     const module = await import(`/embed-components/${componentType}.js`);
@@ -34,4 +35,6 @@ const embedComponents = {
   'github': Github
 ,
   'linked-card': LinkedCard
+,
+  steps: Steps
 };

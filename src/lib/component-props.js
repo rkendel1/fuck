@@ -2,6 +2,7 @@ import Step from '../embed-components/Step.svelte';
 import ChartToolbar from '../embed-components/ChartToolbar.svelte';
 import Github from '../embed-components/Github.svelte';
 import LinkedCard from '../embed-components/LinkedCard.svelte';
+import Steps from '../embed-components/Steps.svelte';
 // Interactive
 export const componentProps = {
   spinner: ['spinner_segments'],
@@ -18,4 +19,4 @@ export const componentProps = {
     'component_width'
   ]
 , chart-toolbar-component: ['brand_colors_primary', 'brand_colors_text_on_primary', 'component_width'], 
-github: ['brand_colors_primary', 'brand_colors_text_on_primary', 'component_width'], 'linked-card': [brand_colors_primary, brand_colors_text_on_primary, component_width]};
+github: ['brand_colors_primary', 'brand_colors_text_on_primary', 'component_width'], 'linked-card': [brand_colors_primary, brand_colors_text_on_primary, component_width], steps: [brand_colors_primary, brand_colors_text_on_primary, component_width]};

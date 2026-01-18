@@ -6,6 +6,7 @@
 
 
 
+
   import { onMount } from 'svelte';
   import EmbedModule from '../EmbedModule.js';
 
@@ -50,6 +51,8 @@ import ChartToolbar from './ChartToolbar.svelte';
 import Github from './Github.svelte';
 
 import LinkedCard from './LinkedCard.svelte';
+
+import Steps from './Steps.svelte';
 </script>
 
 <div>
@@ -94,3 +97,5 @@ import LinkedCard from './LinkedCard.svelte';
 <github />
 
 <linked-card />
+
+<steps />
