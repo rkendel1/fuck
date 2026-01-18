@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "rollup -c -w",
+    "vercel-build": "npm install --legacy-peer-deps && rollup -c",
     "build": "rollup -c",
     "start": "sirv public --single --port 5000"
   },
